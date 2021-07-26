@@ -144,12 +144,14 @@ INSERT INTO user(username, password) VALUES('name', 'password');
 ```
 ```bash
 make
+```
 ![image](https://user-images.githubusercontent.com/53050401/126959218-ae11f833-4d4a-4312-b84c-3f22b334f861.png)
 
+```bash
 ./bin/server
+```
 ![image](https://user-images.githubusercontent.com/53050401/126959293-c045eb15-9781-490d-8cc3-a431a293c540.png)
 
-```
 
 ## 单元测试
 ```bash
@@ -166,8 +168,8 @@ make
 ./webbench-1.5/webbench -c 10000 -t 10 http://ip:port/
 ```
 ## 测试环境
-阿里云服务器1核2GB
-QPS:上千
+* 阿里云服务器1核2GB
+* QPS:上千
 
 # 访问服务器
 * 阿里云开启相应的端口,设置数据库的端口,用户名和密码.并开启数据库
