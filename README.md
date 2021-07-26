@@ -60,7 +60,6 @@
 ├── Makefile
 ├── readme.assest
 │   └── 压力测试.png
-├── readme.md
 ├── resources
 │   ├── 400.html
 │   ├── 403.html
@@ -99,11 +98,7 @@
 │   │   └── wow.min.js
 │   ├── login.html
 │   ├── picture.html
-│   ├── register.html
-│   ├── video
-│   │   └── xxx.mp4
-│   ├── video.html
-│   └── welcome.html
+│   └── register.html
 ├── test
 │   ├── Makefile
 │   ├── readme.md
@@ -126,7 +121,6 @@
     ├── webbench
     ├── webbench.c
     └── webbench.o
-
 
 ```
 
