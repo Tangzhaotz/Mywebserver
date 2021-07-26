@@ -17,3 +17,128 @@
 * MySQL数据库
 * C++
 # 目录树
+```
+.
+├── LICENSE
+├── Mywebserver
+│   ├── bin
+│   │   └── server
+│   ├── build
+│   │   └── Makefile
+│   ├── code
+│   │   ├── buffer
+│   │   │   ├── buffer.cpp
+│   │   │   └── buffer.h
+│   │   ├── config
+│   │   │   └── config.h
+│   │   ├── http
+│   │   │   ├── httpconn.cpp
+│   │   │   ├── httpconn.h
+│   │   │   ├── httprequest.cpp
+│   │   │   ├── httprequest.h
+│   │   │   ├── httpresponse.cpp
+│   │   │   └── httpresponse.h
+│   │   ├── log
+│   │   │   ├── blockqueue.h
+│   │   │   ├── log.cpp
+│   │   │   └── log.h
+│   │   ├── main.cpp
+│   │   ├── pool
+│   │   │   ├── sqlconnpool.cpp
+│   │   │   ├── sqlconnpool.h
+│   │   │   ├── sqlconnRAII.h
+│   │   │   └── threadpool.h
+│   │   ├── server
+│   │   │   ├── epoller.cpp
+│   │   │   ├── epoller.h
+│   │   │   ├── webserver.cpp
+│   │   │   └── webserver.h
+│   │   └── timer
+│   │       ├── heaptimer.cpp
+│   │       └── heaptimer.h
+│   ├── LICENSE
+│   ├── log
+│   │   └── 2021_07_26.log
+│   ├── Makefile
+│   ├── readme.assest
+│   │   └── 压力测试.png
+│   └── resources
+│       ├── 400.html
+│       ├── 403.html
+│       ├── 404.html
+│       ├── 405.html
+│       ├── css
+│       │   ├── animate.css
+│       │   ├── bootstrap.min.css
+│       │   ├── font-awesome.min.css
+│       │   ├── magnific-popup.css
+│       │   └── style.css
+│       ├── error.html
+│       ├── fonts
+│       │   ├── FontAwesome.otf
+│       │   ├── fontawesome-webfont.eot
+│       │   ├── fontawesome-webfont.svg
+│       │   ├── fontawesome-webfont.ttf
+│       │   ├── fontawesome-webfont.woff
+│       │   └── fontawesome-webfont.woff2
+│       ├── images
+│       │   ├── favicon.ico
+│       │   ├── instagram-image1.jpg
+│       │   ├── instagram-image2.jpg
+│       │   ├── instagram-image3.jpg
+│       │   ├── instagram-image4.jpg
+│       │   ├── instagram-image5.jpg
+│       │   └── profile-image.jpg
+│       ├── index.html
+│       ├── js
+│       │   ├── bootstrap.min.js
+│       │   ├── custom.js
+│       │   ├── jquery.js
+│       │   ├── jquery.magnific-popup.min.js
+│       │   ├── magnific-popup-options.js
+│       │   ├── smoothscroll.js
+│       │   └── wow.min.js
+│       ├── login.html
+│       ├── picture.html
+│       └── register.html
+└── README.md
+```
+
+# 项目启动
+进入数据库,开启mysql
+![image](https://user-images.githubusercontent.com/53050401/126958943-e5bee91a-9b2a-49f5-a0c2-b56bc777b11e.png)
+
+```bash
+// 建立yourdb库
+create database yourdb;
+
+// 创建user表
+USE yourdb;
+CREATE TABLE user(
+    username char(50) NULL,
+    password char(50) NULL
+)ENGINE=InnoDB;
+
+// 添加数据
+INSERT INTO user(username, password) VALUES('name', 'password');
+```
+```bash
+make
+![image](https://user-images.githubusercontent.com/53050401/126959218-ae11f833-4d4a-4312-b84c-3f22b334f861.png)
+
+./bin/server
+![image](https://user-images.githubusercontent.com/53050401/126959293-c045eb15-9781-490d-8cc3-a431a293c540.png)
+
+```
+
+## 单元测试
+```bash
+cd test
+make
+./test
+```
+
+## 压力测试
+
+
+ 
