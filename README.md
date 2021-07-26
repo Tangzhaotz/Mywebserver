@@ -139,6 +139,26 @@ make
 ```
 
 ## 压力测试
+```
+./webbench-1.5/webbench -c 100 -t 10 http://ip:port/
+./webbench-1.5/webbench -c 1000 -t 10 http://ip:port/
+./webbench-1.5/webbench -c 5000 -t 10 http://ip:port/
+./webbench-1.5/webbench -c 10000 -t 10 http://ip:port/
+```
+## 测试环境
+阿里云服务器1核2GB
+QPS:上千
+
+# 访问服务器
+* 阿里云开启相应的端口,设置数据库的端口,用户名和密码.并开启数据库
+![image](https://user-images.githubusercontent.com/53050401/126961041-eeb582c8-6082-4922-ba0e-a38ede73afdb.png)
+* 通过端口和ip地址访问
+![image](https://user-images.githubusercontent.com/53050401/126961112-5815b740-3655-404a-8b9d-59da3491ede0.png)
+* 注册用户![image](https://user-images.githubusercontent.com/53050401/126961416-5497f143-5435-4cfc-918c-0fe43fc26a57.png)
+数据库中可以显示注册的用户信息
+![image](https://user-images.githubusercontent.com/53050401/126961453-73f1e9d8-b010-46c2-88ea-80ffca1ce71d.png)
+# TODO
+...
 
 
  
